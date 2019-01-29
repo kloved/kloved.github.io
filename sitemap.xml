@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://www.wk65.com/2019/01/25/hexo-admin%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8/</loc>
+    
+    <lastmod>2019-01-29T06:36:07.838Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://www.wk65.com/2019/01/24/hello-world/</loc>
+    
+    <lastmod>2019-01-25T09:51:25.831Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://www.wk65.com/about/index.html</loc>
     
     <lastmod>2019-01-25T08:56:10.837Z</lastmod>
@@ -19,13 +33,6 @@
     <loc>http://www.wk65.com/tags/index.html</loc>
     
     <lastmod>2019-01-24T08:00:45.245Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://www.wk65.com/2019/01/24/hello-world/</loc>
-    
-    <lastmod>2019-01-24T07:09:30.517Z</lastmod>
     
   </url>
   

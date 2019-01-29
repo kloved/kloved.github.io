@@ -1,8 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[hexo-admin安装使用]]></title>
+    <url>%2F2019%2F01%2F25%2Fhexo-admin%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8%2F</url>
+    <content type="text"><![CDATA[概要如果自己编辑 MD 文件的话，确实比较麻烦，你可以用一些 MD 的编辑器，但是在管理 MD 文件上还是操作不方便。这里推荐使用 hexo-admin，而且编辑完之后可以马上看到效果呢。需要说明的是，hexo-admin 管理是本地用的，就是你需要在本地编辑完之后再上传到 github，而不能直接在线编辑保存，因为 github pages 只支持静态页面的。 安装过程安装过程中可能涉及到一些前提或内容，请参考我的另一篇文章Hexo-Github-Pages安装部署 前提基于版本”hexo”: “^3.7.0”，”hexo-admin”: “^2.3.0”。 安装 hexo-admincd hexo 目录123npm install --save hexo-admin//启动 hexohexo s 然后打开 http://localhost:4000/admin/ 就可以看到管理页面。 在 hexo-admin 你可以Pages - 新加 page；Posts - 新加或删除 post；双击一个 post，你可以编辑，预览，新增修改 tags、categories，选择发布或不发布；Settings - 一些配置；Deploy - 可以直接部署到 github。 问题minimatchnpm WARN deprecated minimatch@2.0.10: Please update to minimatch 3.0.2 or higher to avoid a RegExp DoS issue当你安装 hexo-admin，执行 npm install –save hexo-admin 时，可能会遇到上面的错误提示，是因为你缺少了一些依赖，执行下面的就好了。123npm install minimatch@&quot;3.0.2&quot; npm update -dConfig value “admin.deployCommand” not found 当你第一次点击 Deploy 按钮时，可能会遇到上述的错误，因为缺少了执行 deploy 的命令，这个问题已经有人提了 issue 并且解决了https://github.com/jaredly/hexo-admin/issues/70还需要注意的是，issue 中的脚本只是 hexo deploy，只是做 deploy 操作，但是一般我们的使用习惯是编辑完之后 deploy，所以是要 deploy 最新的，需要把脚本改为即可123#!/usr/bin/env shhexo ghexo d deploy 后你可能看到1234Std Error(node:83411) [DEP0061] DeprecationWarning: fs.SyncWriteStream is deprecated.Warning: Permanently added the RSA host key for IP address &apos;13.229.188.59&apos; to the list of known hosts.Everything up-to-date 这不是错误，你可以不用管。说明已经 deploy 成功。 参考网址：https://albenw.github.io/posts/4ffa5bc6/]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hello World]]></title>
     <url>%2F2019%2F01%2F24%2Fhello-world%2F</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
   </entry>
 </search>
